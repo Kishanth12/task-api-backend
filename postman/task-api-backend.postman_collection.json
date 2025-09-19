@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"first Task\",\r\n    \"description\":\"Just for testing\",\r\n     \"status\":\"in-progress\"\r\n}",
+					"raw": "{\r\n    \"title\":\"Testing Task\",\r\n    \"description\":\"Just for testing\",\r\n     \"status\":\"completed\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5001/tasks",
+					"raw": "http://127.0.0.1:5001/api/tasks",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -31,6 +31,7 @@
 					],
 					"port": "5001",
 					"path": [
+						"api",
 						"tasks"
 					]
 				}
@@ -43,7 +44,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5001/tasks",
+					"raw": "http://127.0.0.1:5001/api/tasks",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -53,6 +54,7 @@
 					],
 					"port": "5001",
 					"path": [
+						"api",
 						"tasks"
 					]
 				}
@@ -65,7 +67,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5001/tasks/68ccd13556d889a97fa27bdb",
+					"raw": "http://127.0.0.1:5001/api/tasks/68cd045fd756707c0e0fbb29",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -75,8 +77,9 @@
 					],
 					"port": "5001",
 					"path": [
+						"api",
 						"tasks",
-						"68ccd13556d889a97fa27bdb"
+						"68cd045fd756707c0e0fbb29"
 					]
 				}
 			},
@@ -88,7 +91,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5001/tasks/68ccd15f56d889a97fa27bde",
+					"raw": "http://127.0.0.1:5001/api/tasks/68ccd15f56d889a97fa27bde",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -98,6 +101,7 @@
 					],
 					"port": "5001",
 					"path": [
+						"api",
 						"tasks",
 						"68ccd15f56d889a97fa27bde"
 					]

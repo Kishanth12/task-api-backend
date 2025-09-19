@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use("/", taskRouter);
+app.use("/api", taskRouter);
 
 app.use(errorHandler);
 
