@@ -11,8 +11,7 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use("/", taskRouter);
 
-
-app.use(errorHandler)
+app.use(errorHandler);
 
 app.listen(port, () => {
   console.log("Server Started on Port: " + port);

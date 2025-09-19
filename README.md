@@ -29,4 +29,3 @@ You can find the source code here: [https://github.com/Kishanth12/task-api-backe
 # Postman Collection
 
 Import `task-api-backend.postman_collection.json` in Postman to test all API endpoints easily.
-

@@ -9,7 +9,9 @@ export const addTask = async (req, res, next) => {
       status,
     });
     const newTask = await task.save();
-    res.status(201).json({success:true, message: "taskCreated Successfully", newTask });
+    res
+      .status(201)
+      .json({ success: true, message: "taskCreated Successfully", newTask });
   } catch (error) {
     next(error);
   }
@@ -39,7 +41,7 @@ export const taskInfo = async (req, res, next) => {
   }
 };
 
-export const deleteTask = async (req, res,next) => {
+export const deleteTask = async (req, res, next) => {
   try {
     const { id } = req.params;
     const task = await Task.findById(id);
@@ -49,7 +51,9 @@ export const deleteTask = async (req, res,next) => {
       return next(err);
     }
     await task.deleteOne();
-    res.status(200).json({success:true, message: "Task deleted successfully" });
+    res
+      .status(200)
+      .json({ success: true, message: "Task deleted successfully" });
   } catch (error) {
     next(error);
   }
